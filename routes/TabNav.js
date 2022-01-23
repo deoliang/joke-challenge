@@ -7,7 +7,7 @@ const Tab = createBottomTabNavigator()
 //defining the bottom tabs navigator whose children are the Tab 1 and Tab 2 screens
 const TabNav = () => {
     return (
-        <Tab.Navigator screenOptions={{
+        <Tab.Navigator backBehavior='none' screenOptions={{
 
             tabBarLabelStyle: {
                 fontWeight: "700",
