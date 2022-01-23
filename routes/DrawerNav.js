@@ -44,7 +44,7 @@ const JokeButton = (props) => {
     };
   }, []);
 
-  async function registerForPushNotificationsAsync() {
+  const registerForPushNotificationsAsync = async ()=> {
     let token;
     if (Device.isDevice) {
       const { status: existingStatus } = await Notifications.getPermissionsAsync();
@@ -76,7 +76,7 @@ const JokeButton = (props) => {
   //--Ending here
 
   //Method to send a push notification immediately after the joke has been fetched
-  async function scheduleAJoke() {
+  const scheduleAJoke = async ()=> {
     await Notifications.scheduleNotificationAsync({
       content: {
         title: "Joke Setup",

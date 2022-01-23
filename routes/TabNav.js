@@ -12,12 +12,13 @@ const TabNav = () => {
             tabBarLabelStyle: {
                 fontWeight: "700",
                 fontSize: 20,
-                marginBottom: 10,
+                marginVertical: 8,
             },
             tabBarIconStyle: { display: 'none' },
             headerShown: false,
             tabBarActiveTintColor: '#906F8B',
             tabBarInactiveTintColor: '#B8AEC8',
+            
             tabBarActiveBackgroundColor: '#EAEEFF'
         }}>
             <Tab.Screen options={{

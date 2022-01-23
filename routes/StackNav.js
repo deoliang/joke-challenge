@@ -12,7 +12,8 @@ const StackNav = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen options={{ headerShown: false }} name="Root Stack" component={TabNav} />
-            <Stack.Screen name="Joke Delivery" component={Joke} />
+            {/*Define back button text specific to iOS devices  */}
+            <Stack.Screen options={{ headerBackTitle: 'Back' }}name="Joke Delivery" component={Joke} />
         </Stack.Navigator>
     )
 };

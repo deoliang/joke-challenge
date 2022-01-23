@@ -4,7 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import DrawerNav from './routes/DrawerNav';
 
 //defining the entry point of the joke challenge app
-export default function App() {
+
+const App = ()=> {
   return (
     <NavigationContainer>
       <DrawerNav/>
@@ -12,3 +13,4 @@ export default function App() {
   );
 }
 
+export default App
