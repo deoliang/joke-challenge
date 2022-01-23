@@ -35,4 +35,5 @@ Scan the QR code in the developer tools and then would be able to run the app on
 - The app is focused on functionality with the outcome of a minimum viable product
 - Some of the code for the notification is obtained from the notificaiton [documentation](https://docs.expo.dev/versions/latest/sdk/notifications/) of the expo website
 - Although the instruction calls for using the [https://v2.jokeapi.dev/joke/Any](https://v2.jokeapi.dev/joke/Any) endpoint for the joke data, [https://v2.jokeapi.dev/joke/Any?type=twopart](https://v2.jokeapi.dev/joke/Any?type=twopart) was used instead to ensure the random joke has both a setup and delivery each time it is fetched
+- Some android devices use gesture based navigation such that swiping from the left or right edges of the screen is equivalent to the back button, this might make opening the left drawer difficult
 - No filter is applied for the endpoint, some of the jokes fetched from the api are quite explicit and offensive, discretion is advised
